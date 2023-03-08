@@ -10,6 +10,7 @@ services:
       - PORT=3000
       - MONGODB_URI=mongodb://mongodb-node:27017/anythink-market
       - GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN=${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}
+      - OPENAI_API_KEY: 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
     working_dir: /usr/src
     volumes:
       - ./:/usr/src/
@@ -28,7 +29,6 @@ services:
       - PORT=3001
       - REACT_APP_BACKEND_URL=${CODESPACE_BACKEND_URL:-http://localhost:3000}
       - WDS_SOCKET_PORT=${CODESPACE_WDS_SOCKET_PORT:-3001}
-      - OPENAI_API_KEY: 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
     working_dir: /usr/src
     volumes:
       - ./:/usr/src/
