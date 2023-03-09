@@ -15,4 +15,4 @@ async function generateImage(prompt) {
             console.log(`Image genrator failed with the error: ${error}`)
             return '';
         });
-    } 
+    }
